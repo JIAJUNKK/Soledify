@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soledify - log in</title>
+<link rel="stylesheet" href="../css/log_in.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel = "stylesheet" href = "../css/large_viewport.css">
+<link rel = "stylesheet" href = "../css/small_viewport.css">
+
+<script src = "../javascript/log_in.js""></script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <ul id = "main-nav-bar">
+        <div class = "nav-bar-container">
+            <li><a href = "index.html">Soledify &nbsp;</a> </li>
+            <li><a href = "sign_up.html">&nbsp; Sign up &nbsp;</a></li>
+        </div>
+    </ul>
+    <div class = "logInText-container">
+        <form action="men.html" name = "log-in-form" onsubmit="return loginValidate()" method = "post"">
+            <p>
+                <span>Your account for Soledify</span>
+                <br><br>
+                Log in to your Soledify Member account for<br>
+                the best shopping and selling experience.
+            </p>
+            <div>
+                <span class = "log-in-textbox-heading-email">Email</span><br>
+                <label for = "Email"></label>
+                <input type = "text" id = "Email" placeholder = "Email" class = "textbox">
+                <br><br>
+            </div>
+            <div>
+                <span class = "log-in-textbox-heading-password">Password</span><br>
+                <label for = "password"></label>
+                <input type = "text" id = "password" placeholder = "Password" class = "textbox">
+                <br><br>
+            </div>
+            <button type = "submit" class = "btn">Sign In</button>
+        </form>
+        
+
+        <p>Don't have an account? <a href = "sign_up.html" class = "join-us">Join Us</a></p>
+    </div>
+
+
+    </body>
+
+</html>

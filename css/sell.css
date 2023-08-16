@@ -1,0 +1,101 @@
+.sell-header{
+    text-align: center;
+}
+.image-container{
+    display: flex;
+    margin-bottom: 0%; width: 80%;
+    background-color: white; border-radius: 10px;
+    margin-left: 10%;
+}
+.image-container div{
+    margin-left: 32%; margin-bottom: 5%;
+}
+#upload-button{
+    display:block; border: 2px solid #778899;
+    width:400px; height:300px;
+    margin-top: 2%; margin-left: 2%; margin-bottom: 2%;
+}
+#upload-button:hover{
+   transform: scale(1.1);
+}
+#display-image{
+    width: 300px;height: 300px; margin-left: 10%;
+    border: none;
+    background-position: center;
+    background: url('../image/add-image.png'); background-size: 300px 290px; background-repeat: no-repeat;
+}
+
+
+
+.personal-info-container{
+    margin-bottom: 10%; width: 80%;
+    background-color: white; border-radius: 10px;
+    margin-left: 10%;
+}
+.name-textbox{
+    height: 50px; width: 70%;
+    font-size: 1.5vw;
+    border: 1px solid; border-radius: 5px;
+    background-color: white;
+    margin-left: 5%; margin-top: 10px;
+}
+h3{
+    margin-left: 5%;
+}
+#sell_div, #auction_div {
+    display: none;
+    margin-left: 5%;
+}
+#sell_div div{
+    display: flex; flex-wrap: wrap;
+}
+#sell_type{
+    height: 50px;
+    font-family: Futura;
+    margin-bottom: 1%; margin-left: 5%;
+}
+.sell-textbox-large{
+    height: 30px; width: 60%;
+    font-family: Futura; font-size: 1.2vw;
+    border-radius: 5px;
+}
+.sell-textbox-medium{
+    height: 30px; width: 26%;
+    font-family: Futura; font-size: 1vw;
+    border-radius: 5px; margin: 1%;
+}
+.sell-textbox-small{
+    height: 30px; width: 13%;
+    font-family: Futura; font-size: 1.2vw;
+    border-radius: 5px; margin: 1%;
+}
+#condition{
+    height: 35px; margin-top: 1.1%; margin-left: 1%;
+    border: 2px solid black; border-radius: 5px;
+    font-size: 1vw;font-family: Futura;
+}
+
+.confirm-container{
+    margin-bottom: 10%; width: 80%;
+    background-color: white; border-radius: 10px;
+    margin-left: 10%;
+}
+.btn{
+    font-family: Futura; font-size: 1.5rem; height: 3rem;
+    color: #E94B3CFF;
+    background-color: #E8E9EB;
+    border: none; border-radius: 5px; 
+}
+.btn:hover{
+    color: #E8E9EB; background-color: #E94B3CFF;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

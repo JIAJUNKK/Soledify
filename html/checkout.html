@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soledify - men sneakers</title>
+<link rel="stylesheet" href="../css/checkout.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/large_viewport.css">
+<link rel="stylesheet" href="../css/small_viewport.css">
+<script src = "../javascript/checkout.js"></script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <ul id = "main-nav-bar">
+        <div class = "nav-bar-container">
+            <li><a href = "../html/index.html">Soledify &nbsp;</a> </li>
+            <li><a href = "../html/men.html">&nbsp; Men &nbsp;</a></li>
+            <li><a href = "../html/women.html">&nbsp; Women &nbsp;</a></li>
+            <li><a href = "../html/outfit.html">&nbsp; Outfit &nbsp;</a></li>
+            <li><a href = "../html/auction.html">&nbsp; Auction &nbsp;</a></li>
+            <li><a href = "../html/sell.html">&nbsp; Sell &nbsp;</a></li>
+            <li><a href = "../html/help.html">&nbsp; Help &nbsp;</a></li>
+            <li><a href = "../html/checkout.html" class = "active">&nbsp; CheckOut &nbsp;</a></li>
+        </div>
+    </ul>
+
+    <div class = "cart-container">
+        <table id="myTable">
+            <tr>
+              <th>Item</th>
+              <th>Price (RM)</th>
+            </tr>
+            <tr>
+              <td>Women's Nike Daybreak </td>
+              <td class="count-me">389</td>
+            </tr>
+            <tr>
+                <td>Men's Nike Blazer Low </td>
+                <td class="count-me">399</td>
+              </tr>
+            <tr>
+              <td>Men's Adidas NMD r1</td>
+              <td class="count-me">669</td>
+            </tr>
+          </table>
+          <button onClick="onClickRemove(this)" class = "cal-btn">Press me to get total</button>
+
+          <span id="val"></span>
+    </div>
+    <br><br><br><br>
+
+    <div class = "checkout-container">
+        <form action = "" onsubmit="return validateForm()" method = "post">
+            <div class = "billing-container">
+                <h2 class = "billing-heading">Billing address</h2>
+                    <div>
+                        <span style = "padding-left: 3%;">Fullname</span><br>
+                        <label for = "fullname"></label>
+                        <input type = "text" id = "fullname" placeholder="Full Name" class = "checkout-textbox-large" required >
+                        <br><br>
+                    </div>
+                    <div>
+                        <span style = "padding-left: 3%;">Email</span><br>
+                        <label for = "email"></label>
+                        <input type = "text" id = "email" placeholder="Email" class = "checkout-textbox-large" required >
+                        <br><br>
+                    </div>
+                    <div>
+                        <span style = "padding-left: 3%;">Address Line 1</span><br>
+                        <label for = "address1"></label>
+                        <input type = "text" id = "address1" placeholder="Address line 1" class = "checkout-textbox-large" required >
+                        <br><br>
+                    </div>
+                    <div>
+                        <span style = "padding-left: 3%;">Address Line 2</span><br>
+                        <label for = "address2"></label>
+                        <input type = "text" id = "adress2" placeholder="Address line 2" class = "checkout-textbox-large" >
+                        <br><br>
+                    </div>
+                    <div>
+                        <span style = "padding-left: 3%;">City</span><br>
+                        <label for = "city"></label>
+                        <input type = "text" id = "city" placeholder= "City" class = "checkout-textbox-large" required>
+                        <br><br>
+                    </div>
+                    <span style = "padding-left: 3%;">State</span>
+                    <div class = "billing-inside-container">
+                        <label for = "state"></label>
+                        <select name = "state" id = "state" class = "checkout-textbox-medium">
+                            <option value="Johor">Johor</option>
+                            <option value="Kedah">Kedah</option>
+                            <option value="Kelantan">Kelantan</option>
+                            <option value="Kuala Lumpur">Kuala Lumpur</option>
+                            <option value="Labuan">Labuan</option>
+                            <option value="Melaka">Melaka</option>
+                            <option value="Negeri Sembilan">Negeri Sembilan</option>
+                            <option value="Pahang">Pahang</option>
+                            <option value="Penang">Penang</option>
+                            <option value="Perak">Perak</option>
+                            <option value="Perlis">Perlis</option>
+                            <option value="Putrajaya">Putrajaya</option>
+                            <option value="Sabah">Sabah</option>
+                            <option value="Sarawak">Sarawak</option>
+                            <option value="Selangor">Selangor</option>
+                            <option value="Terengganu">Terengganu</option>
+                        </select>
+                        <br><br>
+                    </div>
+                    <div>
+                        <span style = "padding-left: 3%;">Postcode</span><br>
+                        <label for = "postcode"></label>
+                        <input type = "text" id = "postcode" placeholder= "Postcode" class = "checkout-textbox-medium" required>
+                    </div>
+                        <br><br>
+            </div>
+
+            <div class = "payment-container">
+                <h2 class = "payment-heading">Payment Details</h2>
+                <div>
+                    <span style = "padding-left: 3%;">Name on Card</span><br>
+                    <label for = "nameOnCard"></label>
+                    <input type = "text" id = "nameOnCard" placeholder= "Name on Card" class = "checkout-textbox-large" required>
+                    <br><br>
+                </div>
+                <div>
+                    <span style = "padding-left: 3%;">Credit Card Number(VISA only)</span><br>
+                    <label for = "creditNum"></label>
+                    <input type = "text" id = "creditNum" placeholder= "Credit Card Number" class = "checkout-textbox-large" required>
+                    <br><br>
+                </div>
+                <div class = "payment-inside-container">
+                    <div>
+                        <label for = "ExpMonth"></label>
+                        <select name = "ExpMonth" id = "ExpMonth" class = "monthBox"required>
+                            <option value="1">01 - January</option>
+                            <option value="2">02 - Febuary</option>
+                            <option value="3">03 - March</option>
+                            <option value="4">04 - April</option>
+                            <option value="5">05 - May</option>
+                            <option value="6">06 - June</option>
+                            <option value="7">07 - July</option>
+                            <option value="8">08 - August</option>
+                            <option value="9">09 - September</option>
+                            <option value="10">10 - October</option>
+                            <option value="11">11 - November</option>
+                            <option value="12">12 - December</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for = "ExpYear"></label>
+                        <select name = "ExpYear" id = "ExpYear" class = "yearBox" required>
+                            <option value="2023">2023</option> <option value="2024">2024</option> <option value="2025">2025</option>
+                            <option value="2026">2026</option> <option value="2027">2027</option> <option value="2028">2028</option> 
+                            <option value="2029">2029</option> <option value="2030">2030</option>
+                            <option value="2031">2031</option> <option value="2032">2032</option>
+                            <option value="2033">2033</option> <option value="2034">2034</option>
+                            <option value="2035">2035</option> <option value="2036">2036</option>
+                            <option value="2037">2037</option> <option value="2038">2038</option> <option value="2039">2039</option>
+                            <option value="2040">2040</option><option value="2041">2041</option> <option value="2042">2042</option>
+                        </select>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for = "CVV"></label>
+                        <input type = "text" id = "CVV" placeholder= "CVV number" class = "CVVBox" required>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class = "sameadr">
+                <input type="checkbox" checked="checked" name="sameadr">Shipping address same as billing
+            </div>
+            <div>
+                <button type = "submit" class = "checkout-btn">Continue to Check Out</button>
+            </div>
+        </form>
+    </div>
+
+
+    
+
+
+    <footer>
+        <div class="footer-content">
+            <h5><i>Soledify</i></h5>
+            <small>
+                EMAIL: soledify@gmail.com <br>
+                PHONE: +60 312345678 <br>
+            </small>
+        </div>
+
+        <div class="footer-bottom">
+            <p><i>Copyright &copy; Soledify. All Rights Reserved &verbar; Privacy Policy</i></p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

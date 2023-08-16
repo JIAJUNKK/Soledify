@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soledify - contact us</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="contact.css">
+<link rel = "stylesheet" href = "large_viewport.css">
+<link rel = "stylesheet" href = "small_viewport.css">
+
+<script src = "contact.js"></script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <ul id = "main-nav-bar">
+        <div class = "nav-bar-container">
+            <li><a href = "index.html">Soledify &nbsp;</a> </li>
+            <li><a href = "men.html">&nbsp; Men &nbsp;</a></li>
+            <li><a href = "women.html">&nbsp; Women &nbsp;</a></li>
+            <li><a href = "outfit.html">&nbsp; Outfit &nbsp;</a></li>
+            <li><a href = "auction.html">&nbsp; Auction &nbsp;</a></li>
+            <li><a href = "sell.html">&nbsp; Sell &nbsp;</a></li>
+            <li><a href = "help.html">&nbsp; Help &nbsp;</a></li>
+            <li><a href = "checkout.html">&nbsp; CheckOut &nbsp;</a></li>
+
+        </div>
+    </ul>
+
+    <h1 class = "contact-heading">Send Us a Message</h1>
+    <form name = "contact-form" action="" onsubmit="return contactvalidateForm()" method = "post" class = "center-position">
+        <div>
+            <label for = "Name"></label>
+            <input type = "text" placeholder = "Name" class = "contact-textbox" required>
+            <br><br>
+        </div>
+        <div>
+            <label for = "Email"></label>
+            <input id = "Email" type = "text" placeholder = "Email" class = "contact-textbox"  required>
+            <br><br>
+        </div>
+        <div>
+            <label for = "Phone"></label>
+            <input id = "Phone" type = "text" placeholder = "Phone Number: (+60 12 345 6789)" class = "contact-textbox" 
+            required >
+            <br><br>
+        </div>
+        <textarea placeholder="Feedback..." class = "feedback"></textarea>
+        <br>
+        <button type = "submit" class = "contact-button" >Submit</button>
+        <p>Back to <a class = "help-text" href = "help.html">Help</a></p>
+
+    </form>
+
+
+    <footer>
+        <div class="footer-content">
+            <h5><i>Soledify</i></h5>
+            <small>
+                EMAIL: soledify@gmail.com <br>
+                PHONE: +60 312345678 <br>
+            </small>
+        </div>
+
+        <div class="footer-bottom">
+            <p><i>Copyright &copy; Soledify. All Rights Reserved &verbar; Privacy Policy</i></p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

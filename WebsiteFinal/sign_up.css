@@ -1,0 +1,117 @@
+body, html{
+    font-family: Futura;
+    background-color: #E8E9EB;
+}
+label{
+    display: inline-block;
+    padding-bottom: 2%;
+}
+input{
+    width: 20rem;
+}
+input::placeholder{
+    font-family: Futura;
+    font-size: 1.1rem;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+p span{
+    font-size: 1.7rem;
+    color: #E94B3CFF;
+}
+.btn{
+    font-family: Futura; font-size: 1.5rem; height: 3rem;
+    color: #E94B3CFF;
+    background-color: #E8E9EB;
+    border: none; border-radius: 5px; 
+}
+.btn:hover{
+    color: #E8E9EB; background-color: #E94B3CFF;
+    cursor: pointer;
+}
+.textbox{
+    height: 50px;
+    font-size: 1vw;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+.signUpText-container{
+    text-align: center;
+    background-color: black;
+    width: 50%; border-radius: 10px;
+    margin-left: 25%;
+}
+
+li{
+    font-size: 1.2rem;
+    display: inline;
+    text-align: center;
+}   
+a{
+    text-decoration: none;
+}
+.log-in{
+    text-decoration: none;
+    color: #746D69
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: beige;
+    color: black;
+    width: 100%;
+  }
+
+.nav-bar-container{
+    position: absolute;
+    margin-left: auto; margin-right: auto;
+    top: 0; bottom: 0;left: 0; right: 0; height: 200px;
+    text-align: left;
+    background-color: #313335;
+}
+li{
+    font-size: 2.5rem;
+    display: inline;
+    text-align: center;
+}  
+
+  @media only screen and (max-width: 1200px) {
+    .signUpText-container{
+        margin-left: 10%; margin-top: 40%;
+    }
+    .nav-bar-container{
+       position: absolute;
+       margin-left: auto; margin-right: auto;
+       top: 0; bottom: 0;left: 0; right: 0; height: 250px;
+       text-align: left;
+       background-color: #313335;
+    }
+    li{
+       font-size: 2.5rem;
+       display: inline;
+       text-align: center;
+    }  
+ }
+ 
+  @media only screen and (max-width: 700px) {
+    .nav-bar-container{
+        position: absolute;
+        margin-left: auto; margin-right: auto;
+        top: 0; bottom: 0;left: 0; right: 0; height: 320px;
+        text-align: left;
+        background-color: #313335;
+        width: 200%;
+    }
+    li{
+        font-size: 3.3rem; 
+    }  
+    .signUpText-container{
+        margin-left: 20%; margin-top: 150%;
+    }
+ }

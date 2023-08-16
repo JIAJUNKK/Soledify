@@ -1,0 +1,24 @@
+@media only screen and (max-device-width: 480px){
+        /*homepage*/
+        .homepage-heading{
+            text-align: center;
+            font-size: 12rem; font-family: Futura;
+            padding-top: 60%;
+        }
+        .homepage-heading span{
+            font-size: 3rem;
+            color: #E94B3CFF;
+        }
+        
+        .homepage-btn{
+            font-family: Futura; font-size: 3rem; height: 100px;
+            color: white;
+            background-color: black;
+            border: none; border-radius: 5px; 
+            width: 45%;
+        }
+        .homepage-button-container{
+            display: flex; flex-direction: row;
+            margin-left: 10%;
+        }
+}

@@ -1,0 +1,298 @@
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+    /*homepage*/
+    .homepage-heading{
+        text-align: center;
+        font-size: 10rem; font-family: Futura;
+        padding-top: 30%;
+    }
+    .homepage-heading span{
+        font-size: 2.5rem;
+        color: #E94B3CFF;
+    }
+    
+    .homepage-btn{
+        font-family: Futura; font-size: 3rem; height: 100px;
+        color: white;
+        background-color: black;
+        border: none; border-radius: 5px; 
+        width: 45%;
+    }
+    .homepage-button-container{
+        display: flex; flex-direction: row;
+        margin-left: 10%;
+    }
+
+    
+    /*sign up and log in page*/
+    .signUpText-container{
+        width: 85%;
+        height: 1200px;
+        margin-left: 7%;
+    }
+    .logInText-container{
+        width: 85%;
+        margin-left: 7%; margin-top: 50%;
+    }
+    p{
+        font-size: 2rem;
+        padding: 10px;
+    }
+    p span{
+        font-size: 2.7rem;
+    }
+    .textbox{
+        width: 80%; height: 100; font-size: 2rem;
+        padding: 20px; font-family: Futura;
+    }
+    .textbox::placeholder{
+        font-size: 2rem; font-family: Futura;
+    }
+    .btn{
+        font-size:3rem; height: 5rem; 
+    }
+    /*men and women shoes page*/
+    .men-heading{
+        margin-top: 0%;
+        font-size: 4.5rem;
+    }
+    .men-heading-container{
+        margin-top: 30%; width: 75%;
+        display: flex;flex-direction: column;
+    }
+    .sort-container{
+        display: flex;
+        margin-bottom: 2%; margin-left: 0%;
+        width: 70%; height: 50%;
+        flex-grow: 0.3;
+    }
+    .sort-by-heading{
+        font-size: 2.5rem;
+        padding-right: 3%;
+    }
+    .sort-inside-container{
+        padding-top: 10px;
+        padding-right: 45px;
+        width: 70%;
+    }
+    .sort-by-content{
+        font-size: 2rem;
+        text-align: left;
+        margin-top: 40px;
+    }
+    .view-cart-container{
+        margin-left:10%; margin-top: 0%;
+    }
+    
+    .user-name{
+        float: right;
+        margin-right:65%; margin-top: 2px; color: lightgray;
+    }
+    .viewport{
+        display: flex; flex-direction: row;
+    }
+
+    /*Outfit page*/
+    .outfit-heading{
+        padding-top: 20%;
+     }
+    /*Auction page*/
+    #clock{
+        float: left;
+        margin-top: 20%;
+    }
+    .clock-heading{
+        font-size: 3rem; text-align: left; margin-left: -15%;
+    }
+
+    .auction-inside-container{
+        width: 90%; margin-left: 5%;
+    }
+    .auction-inside-container img{
+        width: 25%;
+    }
+    .auction-inside-container div{
+        margin-left: 3%;
+    }
+    .details-container{
+        display: flex; flex-direction: column; flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+
+
+    .auction-flex-container{
+        display: flex; flex-direction: column;
+        margin-bottom: 20%;
+    }
+    .auction-flex-container img{
+        width: 100%; border-radius: 10px;
+    }
+    .auction-container-heading{
+        font-size: 3rem;
+    }
+    .text-container{
+        background-color: white;
+        width: 100%; border-radius: 10px;
+    }
+    .bid-input-box{
+        width: 70%; height: 50px; border-radius: 10px;
+        background-color: #746D69; border: none;
+        margin-bottom: 2%;
+    }
+    /*Sell page*/
+    #upload-button{
+        display:block; border: 2px solid #778899;
+        width:500px; height:400px;
+        margin-top: 2%; margin-left: -28%; margin-bottom: 2%;
+    }
+    #upload-button:hover{
+       transform: scale(1.1);
+    }
+    #display-image{
+        width: 400px;height: 400px; margin-left: 8%;
+        background-size: 400px 390px; background-repeat: no-repeat;
+    }
+    .sell-header{
+        padding-top: 25%;
+        font-size: 2.5rem;
+    }
+
+    .image-container-header{
+        font-size: 1.5rem; text-align: left;
+        margin-left: -25%; margin-bottom: 5%;
+    }
+    #sell_div, #auction_div {
+        display: none;
+        margin-left: 5%;
+    }
+    #sell_div div, #auction_div div{
+        display: flex; flex-wrap: wrap; flex-direction: column;
+    }
+
+    #sell_type{
+        height: 50px;
+        font-size: 1.2rem;
+        margin-bottom: 1%; margin-left: 5%;
+    }
+    .name-textbox{
+        font-size: 2rem; font-family: Futura;
+    }
+    .name-textbox::placeholder{
+        font-size: 2rem; font-family: Futura;
+    }
+
+    .sell-textbox-large{
+        height: 30px; width: 60%;
+        font-family: Futura; font-size: 1.5rem;
+        border-radius: 5px;
+    }
+    .sell-textbox-large::placeholder{
+        font-family: Futura; font-size: 1.5rem;
+    }
+
+    .sell-textbox-medium{
+        height: 30px; width: 80%;
+        font-family: Futura; font-size: 1.5rem;
+        border-radius: 5px; margin: 1%;
+    }
+    .sell-textbox-medium::placeholder{
+        font-family: Futura; font-size: 1.5rem;
+    }
+    .sell-textbox-small{
+        height: 30px; width: 50%;
+        font-family: Futura; font-size: 1.5rem;
+        border-radius: 5px; margin: 1%;
+    }
+    .sell-textbox-small::placeholder{
+        font-family: Futura; font-size: 1.5rem;
+    }
+    #condition{
+        width: 50%; height: 50px; 
+        margin-top: 1.1%; margin-left: 1%; margin-bottom: 1%;
+        font-size: 1.2rem;
+    }
+    .btn{
+        font-size: 2rem; height: 2.5rem; margin-left: 2%; margin-top: 2%;
+    }
+    .paragraph-sell{
+        font-size: 2rem;
+    }
+    
+
+    /*help and contact page*/
+    .help-heading{
+        padding-top: 20%;
+        font-size: 6rem;
+    }
+    .question-container {
+        margin-left:20%;
+    }
+    .accordion {
+        width: 80%; font-size: 2.5rem;
+    }
+    .accordion-font{
+        font-size: 2rem;
+    }
+    .panel {
+        width: 74%; font-size: 2rem;
+    }
+    .search-bar{
+        margin-left: 20%;
+        width: 55%;
+    }
+    .search-bar::placeholder{
+        font-size: 2rem;
+    }
+
+    .contact-heading{
+        margin-top: 30%;
+        font-size: 4rem;
+    }
+    .contact-textbox{
+        width: 600px;
+    }
+    .contact-textbox::placeholder, .feedback::placeholder{
+        font-size: 1.5rem;
+    }
+    .contact-button{
+        font-size: 3rem; height: 100px;
+        margin-bottom: 10%;
+    }
+    .feedback{
+        width: 650px; height: 150px;
+    }
+    /*checkout page*/
+    .cart-container{
+      margin-top: 30%;  
+    }
+    .cal-btn{
+        width: 40%;
+    }
+    #val{
+        width: 40%;
+    }
+
+
+    /*navigation bar*/
+    .nav-bar-container{
+        width: 101%;
+        position: absolute;
+        margin-left: auto; margin-right: auto;
+        top: 0; bottom: 0;left: 0; right: 0; height: 200px;
+        text-align: left;
+        background-color: #313335;
+    }
+    li{
+        font-size: 2.5rem;
+        display: inline;
+        text-align: center;
+    }  
+}
+
+
+@media (max-width: 1000px) {
+    #gallery {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+ }

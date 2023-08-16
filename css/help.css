@@ -1,0 +1,57 @@
+body,html{
+    background-color: #E8E9EB;
+    font-family: Futura;
+}
+.help-heading,p{
+    text-align: center;
+}
+.question-container {
+    margin-left: 30%;
+}
+.help-heading{
+    font-size: 5rem;
+}
+p{
+    font-size: 1.5rem;
+}
+.search-bar{
+    margin-bottom: 1%;margin-left: 30%; padding: 1%;
+    width: 40%;
+    border: 2px solid #778899;border-radius: 10px;
+    background-color: #E8E9EB;
+}
+input::placeholder{
+    font-family: Futura; font-size: 1rem;
+}
+
+.accordion {
+    background-color: #eee; color: black;
+    cursor: pointer;
+    width: 60%;
+    border: none;
+    text-align: left;
+    font-family: Futura; font-size: 1.2rem;
+}
+.accordion-font{
+    font-size: 1rem;
+    text-align: left;
+}
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 56.3%;
+  }
+
+.contact-text{
+    background-color: white; color: #E94B3CFF;
+    border-radius: 10px;
+}
+.contact-text:hover{
+    background-color: #E94B3CFF; color: white;
+}

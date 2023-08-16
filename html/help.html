@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soledify - help</title>
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/help.css">
+<link rel = "stylesheet" href = "../css/large_viewport.css">
+<link rel = "stylesheet" href = "../css/small_viewport.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <ul id = "main-nav-bar">
+        <div class = "nav-bar-container">
+          <li><a href = "index.html">Soledify &nbsp;</a> </li>
+          <li><a href = "men.html">&nbsp; Men &nbsp;</a></li>
+          <li><a href = "women.html">&nbsp; Women &nbsp;</a></li>
+          <li><a href = "outfit.html">&nbsp; Outfit &nbsp;</a></li>
+          <li><a href = "auction.html">&nbsp; Auction &nbsp;</a></li>
+          <li><a href = "sell.html">&nbsp; Sell &nbsp;</a></li>
+          <li><a href = "help.html" class = "active">&nbsp; Help &nbsp;</a></li>
+          <li><a href = "checkout.html">&nbsp; CheckOut &nbsp;</a></li>
+
+        </div>
+    </ul>
+
+    <h1 class = "help-heading">Get Help</h1>
+    <input type="text" placeholder="Search for FAQ" class = "search-bar">
+
+    <div class = "question-container">
+        <button class="accordion"><h4>What does Soledify Membership do?</h4></button>
+        <div class="panel">
+          <p class = "accordion-font">It allows you to buy and sell on Soledify</p>
+        </div>
+
+        <button class="accordion"><h4>What is the return policy?</h4></button>
+        <div class="panel">
+          <p class = "accordion-font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>
+
+        <button class="accordion"><h4>How to buy on Soledify?</h4></button>
+        <div class="panel">
+          <p class = "accordion-font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>
+
+        <button class="accordion"><h4>How to sell on Soledify?</h4></button>
+        <div class="panel">
+          <p class = "accordion-font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>
+        
+        <button class="accordion"><h4>How to bid on Soledify?</h4></button>
+        <div class="panel">
+          <p class = "accordion-font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>
+
+        <button class="accordion"><h4>What are the rules for Soledify Auction?</h4></button>
+        <div class="panel">
+          <p class = "accordion-font">
+            "Longest Soledify Auction duration is only 1 day. No joy bidding or flaking the auctioner"
+          </p>
+        </div>
+
+    </div>
+
+
+    <p>Don't get what you need? Contact us <a class = "contact-text" href = "contact.html">here</a></p>
+
+
+    <footer>
+        <div class="footer-content">
+            <h5><i>Soledify</i></h5>
+            <small>
+                EMAIL: soledify@gmail.com <br>
+                PHONE: +60 312345678 <br>
+            </small>
+        </div>
+
+        <div class="footer-bottom">
+            <p><i>Copyright &copy; Soledify. All Rights Reserved &verbar; Privacy Policy</i></p>
+        </div>
+    </footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+  </script>
+
+
+</body>
+
+</html>

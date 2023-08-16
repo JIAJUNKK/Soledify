@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soledify - sell</title>
+<link rel="stylesheet" href="../css/font.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/sell.css">
+<link rel = "stylesheet" href = "../css/large_viewport.css">
+<link rel = "stylesheet" href = "../css/small_viewport.css">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <script src = "../javascript/sell.js"></script>
+
+
+    <ul id = "main-nav-bar">
+        <div class = "nav-bar-container">
+            <li><a href = "index.html">Soledify &nbsp;</a> </li>
+            <li><a href = "men.html">&nbsp; Men &nbsp;</a></li>
+            <li><a href = "women.html">&nbsp; Women &nbsp;</a></li>
+            <li><a href = "outfit.html">&nbsp; Outfit &nbsp;</a></li>
+            <li><a href = "auction.html">&nbsp; Auction &nbsp;</a></li>
+            <li><a href = "sell.html" class = "active">&nbsp; Sell &nbsp;</a></li>
+            <li><a href = "help.html">&nbsp; Help &nbsp;</a></li>
+            <li><a href = "checkout.html">&nbsp; CheckOut &nbsp;</a></li>
+
+        </div>
+    </ul>
+
+
+    <h1 class = "sell-header">Step 1: Upload your product cover image here</h1>
+    <div class = "image-container">
+        <div>
+            <h3 class = "image-container-header">This will be your cover picture</h3>
+            <input type='file' id="image-input" style="display:none;" accept="image/*" required>
+            <button id = "upload-button" onclick="document.getElementById('image-input').click()">
+                <div id="display-image">
+                </div>
+            </button>
+        </div>
+        <script type="text/javascript">
+            const image_input = document.querySelector("#image-input");
+            image_input.addEventListener("change", function() {
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+                const uploaded_image = reader.result;
+                document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+            });
+            reader.readAsDataURL(this.files[0]);
+            });        
+        </script>
+        
+    </div>
+
+
+    <h1 class = "sell-header">Step 2: Fill in your personal information and sell type here</h1>
+    <div class = "personal-info-container">
+            <label for = "name"></label>
+            <input type = "text" id = "name" placeholder="Full Name" class = "name-textbox" required><br><br>
+             
+            <h3>Select auction or sell</h3>
+            <select id="sell_type" name="sell_type" onchange="showSection(this)">
+                <option value="null">-- Select type</option>
+                <option value="0">Sell</option>
+                <option value="1">Auction</option>
+             </select>
+
+
+             <div id="sell_div" style="display:none;">
+                This is sell section <br>
+                <form name = "sell-form" action="" onsubmit="return sellValidate()" method = "post">
+                    <label for = "product-name"></label>
+                    <input type = "text" id = "sell-product-name" placeholder="Your shoe name" class = "sell-textbox-large" required><br><br>
+                    <div>
+                        <label for = "sell-shoe-size"></label>
+                        <input type = "text" id = "shoe-size" placeholder="Your shoe size(uk)" class = "sell-textbox-small" required>
+                        <label for = "sell-price"></label>
+                        <input type = "text" id = "sell-price" placeholder="Your sell price" class = "sell-textbox-small" required>
+                        <select id="condition" name="condition" onchange="" required>
+                            <option value="">-- Select condition</option>
+                            <option value="brand new">Brand New</option>
+                            <option value="used">Used in good condition</option>
+                        </select>
+                        <select id="condition" name="condition" onchange="" required>
+                            <option value="">-- Select gender</option>
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                        </select>
+                    </div>
+                    <button type = "submit" class = "btn" >Submit</button>
+                    <p>Once submit, cannot make any changes</p>
+                </form>
+            </div>
+
+
+            <div id="auction_div" style="display:none;">
+                This is auction section
+                <form name = "auction-form" action="" onsubmit="return auctionValidate()" method = "post">
+                    <label for = "product-name"></label>
+                    <input type = "text" id = "auction-product-name" placeholder="Your shoe name" class = "sell-textbox-large" required><br><br>
+                    <div>
+                        <label for = "shoe-size"></label>
+                        <input type = "text" id = "auction-shoe-size" placeholder="Your shoe size(uk)" class = "sell-textbox-small" required>
+
+                        <label for = "sell-price"></label>
+                        <input type = "text" id = "min-bid-price" placeholder="Min bid" class = "sell-textbox-medium" required>
+
+                        <label for = "sell-price"></label>
+                        <input type = "text" id = "max-bid-price" placeholder="Max bid(enter null if don't want to include)" class = "sell-textbox-medium">
+                    </div>
+                        <label for = "bid-price"></label>
+                        <input type = "text" id = "BIN-price" placeholder="Your BIN price" class = "sell-textbox-small" required>
+                        <select id="condition" name="condition" onchange="">
+                            <option value="">-- Select condition</option>
+                            <option value="brand new">Brand New</option>
+                            <option value="used">Used in good condition</option>
+                        </select>
+                    <br>    
+                    <button type = "submit" class = "btn" >Submit</button>
+                    <p class = "paragraph-sell">Once submit, cannot make any changes</p>
+                </form>  
+            </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <h5><i>Soledify</i></h5>
+            <small>
+                EMAIL: soledify@gmail.com <br>
+                PHONE: +60 312345678 <br>
+                Adress: 11, jln1, tmn1, selangor
+            </small>
+        </div>
+
+        <div class="footer-bottom">
+            <p><i>Copyright &copy; Soledify. All Rights Reserved &verbar; Privacy Policy</i></p>
+        </div>
+    </footer>
+
+
+
+    </body>
+
+</html>

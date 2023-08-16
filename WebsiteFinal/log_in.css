@@ -1,0 +1,55 @@
+body, html{
+    font-family: Futura;
+    background-color: #E8E9EB;
+}
+label{
+    display: inline-block;
+    padding-bottom: 2%;
+}
+input{
+    width: 20rem;
+}
+input::placeholder{
+    font-size: 1.1rem;
+}
+p{
+    text-align: center;
+    color: white;
+}
+p span{
+    font-size: 1.7rem;
+    color: #E94B3CFF;
+}
+.btn{
+    font-family: Futura; font-size: 1.5rem; height: 3rem;
+    color: #E94B3CFF;
+    background-color: #E8E9EB;
+    border: none; border-radius: 5px; 
+}
+.textbox{
+    height: 50px;
+    font-size: 1vw;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+.logInText-container{
+    text-align: center; border-radius: 10px;
+    margin-left: 30%; margin-top: 17%;
+    background-color: black;
+    width: 600px;
+}
+
+.join-us{
+    text-decoration: none;
+    color: #746D69;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logInText-container{
+        text-align: center;
+        margin-left: 15vw; margin-top: 50%;
+        background-color: black;
+        width: 600px;
+    }
+}

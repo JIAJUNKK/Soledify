@@ -1,0 +1,54 @@
+body,html{
+    font-family: Futura;
+    background-color: #E8E9EB;
+}
+
+.contact-heading{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.feedback{
+    width: 40%; height: 100px;
+    margin-top: 3%;
+}
+.contact-textbox{
+    width: 30%;height: 50px; 
+    font-size: 1.5rem;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+textarea::placeholder, .contact-textbox::placeholder{
+    font-family: Futura;
+    font-size: 1.5rem;
+}
+
+.contact-button{
+    font-family: Futura; font-size: 1.5rem; height: 3rem;
+    color: #E94B3CFF;
+    background-color: black;
+    border: none; border-radius: 5px; 
+    align-items: center;
+    margin-top: 2%;
+}
+.contact-button:hover{
+    color: #E8E9EB; background-color: #E94B3CFF;
+    cursor: pointer;
+}
+.center-position{
+    text-align: center;
+    margin-top: 2%;
+}
+p{
+    font-family: Futura; font-size: 1.5rem; font-style: italic;
+    margin-top: 3%;
+}
+.help-text{
+    background-color: white; color: #E94B3CFF;
+    border-radius: 10px;
+}
+.help-text:hover{
+    background-color: #E94B3CFF; color: white;
+}
+  

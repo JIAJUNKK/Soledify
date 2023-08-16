@@ -1,0 +1,89 @@
+.billing-container, .payment-container, .checkout-container, .cart-container{
+    background-color: #cccdc6;
+    display: flex; flex-direction: column;
+    border-radius: 10px;
+}
+.billing-inside-container, .payment-inside-container{
+    background-color: #cccdc6;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+}
+.billing-heading, .payment-heading{
+    margin-left: 2%;
+}
+.checkout-textbox-large{
+    width: 90%; height: 50px;
+    font-family: Futura; font-size: 1.5rem;
+    margin-left: 2%; margin-bottom: 1%;
+    border: 2px solid #778899; border-radius: 5px;
+}
+.checkout-textbox-medium{
+    width:80%;height: 50px;
+    font-family: Futura; font-size: 1.5rem;
+    margin-left: 2%; margin-bottom: 1%;
+    border: 2px solid #778899; border-radius: 5px;
+}
+.monthBox{
+    width: 100%;height: 55px;
+    font-family: Futura; font-size: 1.5rem;
+    margin-right: 50%; margin-left: 15%;
+    border: 2px solid #778899; border-radius: 5px;
+}
+.yearBox{
+    width: 100%;height: 55px;
+    font-family: Futura; font-size: 1.5rem;
+    margin-left: 50%;
+    border: 2px solid #778899; border-radius: 5px;
+}
+.CVVBox{
+    width: 100%;height: 50px;
+    font-family: Futura; font-size: 1.5rem;
+    margin-right: 50%; margin-left: 20%;
+    border: 2px solid #778899; border-radius: 5px;
+}
+
+.checkout-textbox-large::placeholder{
+    font-family: Futura; font-size: 1.5rem;
+}
+.sameadr{
+    margin: 2%;
+}
+.checkout-btn{
+    width: 95%; height: 50px;
+    background-color: white; 
+    font-size: 1.5rem; font-family: Futura;
+    margin-left: 2%; margin-bottom: 2%;
+    border: 1px solid #cccdc6; border-radius: 5px;
+}
+.checkout-btn:hover{
+    transform: scale(1.03);
+    background-color: #E94B3CFF; color: white;
+}
+#myTable{
+    margin-left: 2%;
+}
+#myTable td {
+    text-align: left;
+    font-size: 1.2rem;
+}
+#myTable th{
+    text-align: left;
+    font-size: 1.5rem;
+}
+#val {
+    display: inline; width: 25%;
+    margin-top: 2%; margin-left: 2%; margin-bottom: 2%; 
+    font-size: 2rem; font-style: italic;
+    background-color: #E8E9EB; color: black;
+    border-radius: 5px;
+}
+.cal-btn{
+    height: 40px; width: 20%; 
+    margin-left: 2%; margin-top: 2%;
+    font-size: 1rem; font-family: Futura;
+    border: 1px solid #cccdc6; border-radius: 5px;
+    background-color: white;
+}
+.cal-btn:hover{
+    transform: scale(1.1);
+    background-color: #E94B3CFF; color: white;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soledify - sign up</title>
+<link rel="stylesheet" href="sign_up.css">
+<link rel="stylesheet" href="main.css">
+<link rel = "stylesheet" href = "large_viewport.css">
+<link rel = "stylesheet" href = "small_viewport.css">
+<script src = "sign_up.js"></script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <?php include 'connect.php'?>
+    <ul id = "main-nav-bar">
+        <div class = "nav-bar-container">
+            <li><a href = "index.html">Soledify &nbsp;</a> </li>
+            <li><a href = "log_in.html">Log In &nbsp;</a> </li>
+
+        </div>
+    </ul>
+    
+    <div class = "signUpText-container">
+    <form name = "sign-up-form" action="men.html" onsubmit="return validateForm()" method = "post">
+        <p>
+            <span>Become A Soledify Member</span>
+            <br><br>
+            Create your Soledify Member to start 
+            <br>buying, selling and auctionning sneakers.
+        </p>
+        <div>
+            <label for = "fname"></label>
+            <input type = "text" id = "fname" placeholder="First Name" class = "textbox" name = "fname" required>
+            <br><br>
+        </div>
+        <div>
+            <label for = "lname"></label>
+            <input type = "text" id = "lname" placeholder = "Last Name" class = "textbox" name = "lname" required>
+            <br><br>
+        </div>
+        <div>
+            <label for = "Email"></label>
+            <input type = "text" id = "Email" placeholder = "Email" class = "textbox" name = "email" required>
+            <br><br>
+        </div>
+        <div>
+            <label for = "confirmEmail"></label>
+            <input type = "text" id = "confirmEmail" placeholder = "Confrim Email" class = "textbox" required>
+            <br><br>
+        </div>
+        <div>
+            <label for = "password"></label>
+            <input type = "text" id = "password" placeholder = "Password (at least 8 characters)" class = "textbox" name = "password" required>
+            <br><br>
+        </div>
+        <div>
+            <label for = "confirmPassword"></label>
+            <input type = "text" id = "confirmPassword" placeholder = "ReEnter Password" class = "textbox" required>
+            <br><br>
+        </div>
+        <button type = "submit" class = "btn" >Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href = "log_in.html" class = "log-in">Log in</a></p>
+    </div>
+
+
+    
+      
+
+
+    </body>
+
+</html>

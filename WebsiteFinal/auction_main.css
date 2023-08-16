@@ -1,0 +1,52 @@
+#clock {
+    max-width: 700px;
+    border-radius: 10px;
+    position:sticky; margin-left: 30%;
+  }
+  .clock-heading{
+      font-size: 2rem; 
+  }
+.auction-flex-container{
+    display: flex; flex-direction: row;
+    padding: 1%; margin-left: 9%;
+    width: 80%; 
+    background-color: #3b444b; border-radius: 10px;
+    margin-bottom: 5%;
+
+}
+.auction-flex-container img{
+    width: 80%; border-radius: 10px;
+}
+.text-container{
+    background-color: white;
+    width: 50%; border-radius: 10px;
+}
+.text-container div{
+    margin-left: 2%;
+    padding-top: 3%;
+}
+.bid-input-box{
+    width: 45%; height: 50px; border-radius: 10px; font-size: 1.5rem;
+    background-color: #746D69; color: white;border: none;
+    margin-bottom: 2%;
+}
+.bid-input-box::placeholder{
+    color: white; font-family: Futura; font-size: 1.5rem;
+    text-align: left; vertical-align: middle;
+}
+.total-box{
+    width: 50%; height: 50px; border-radius: 10px; 
+    font-size: 2rem; font-family: Futura;
+    background-color: #746D69; border: none; color: white;
+    margin-bottom: 2%;
+}
+.submit-btn{
+    font-family: Futura; font-size: 1.5rem; height: 3rem;
+    color: #E94B3CFF; background-color: #E8E9EB;
+    border: none; border-radius: 5px; 
+    margin: 2%;
+}
+.submit-btn:hover{
+    color: #E8E9EB; background-color: #E94B3CFF;
+    cursor: pointer;
+}
